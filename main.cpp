@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 int main(int argc, char **argv) {
     std::cout << "Hello, world!" << std::endl;
@@ -12,6 +13,11 @@ int main(int argc, char **argv) {
     {
       std::cout<< val << "\n";
 	  std::cout<< "TEST" << "\n";
+    }
+    auto f = std::find(std::begin(vec),std::end(vec),2);
+    if(f != vec.end())
+    {
+	std::cout<< "found " << *f << "\n";
     }
     return 0;
 }
