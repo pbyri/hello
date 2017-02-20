@@ -11,6 +11,7 @@ int main(int argc, char **argv) {
     for(auto val : vec)
     {
       std::cout<< val << "\n";
+	  std::cout<< "TEST" << "\n";
     }
     return 0;
 }
